@@ -13,7 +13,7 @@ const App = () => {
   const joinRoom = async (user, room) => {
     try{
       const connection = new HubConnectionBuilder()
-      .withUrl("https://localhost:7213/chat")
+      .withUrl("https://simplechatservice.azurewebsites.net/chat")
       .configureLogging(LogLevel.Information)
       .build();
 
